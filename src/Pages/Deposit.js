@@ -27,10 +27,17 @@ const Deposit = () => {
   };
 
   return (
-    <div>
-      <Link to='/admin'>Back</Link>
+    <div style={{
+        backgroundImage: 'url("./pic.jpg")',
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat',
+        padding: '20px',
+      }}>
+      <Link className='back' to='/admin'>Back</Link>
 
-      <h2>Deposit Form</h2>
+      <h2 style={{
+        color: 'whitesmoke'
+      }}>Deposit Form</h2>
 
       <form onSubmit={handleSubmit}>
         <label htmlFor="name">Name:</label>
@@ -66,7 +73,7 @@ const Deposit = () => {
         />
         <br />
 
-        <label>Items:</label>
+        <label className='items'><u>ITEMS</u></label>
         <br />
 
         <label htmlFor="bucket">Bucket:</label>
